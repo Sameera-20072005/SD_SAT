@@ -1,0 +1,135 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f8f4;
+    color: #24352b;
+}
+
+header {
+    background: #176b48;
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+header h2 {
+    margin: 0;
+}
+
+button {
+    background: #218653;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #105b38;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+.hero {
+    background: #dff1df;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    color: #176b48;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+input {
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 5px 0;
+}
+
+#search {
+    width: min(350px, 90%);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #dce6dd;
+}
+
+.emoji {
+    font-size: 40px;
+}
+
+.card h3 {
+    margin-bottom: 5px;
+}
+
+.cart-item {
+    background: white;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+#tracking {
+    background: white;
+    padding: 15px;
+    margin-top: 12px;
+    border-radius: 7px;
+    line-height: 1.8;
+}
+
+#message {
+    color: #176b48;
+}
+
+footer {
+    text-align: center;
+    background: #e2eee4;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 450px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
